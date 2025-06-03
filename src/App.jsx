@@ -1,10 +1,17 @@
 import React from 'react'
+import { ChakraProvider, Box, Heading, Container } from '@chakra-ui/react'
 
 function App() {
   return (
-    <div>
-      <h1>Hello React!</h1>
-    </div>
+    <ChakraProvider>
+      <Container maxW="container.xl" py={10}>
+        <Box textAlign="center">
+          <Heading as="h1" size="2xl" mb={6}>
+            Bienvenue sur notre application
+          </Heading>
+        </Box>
+      </Container>
+    </ChakraProvider>
   )
 }
 
